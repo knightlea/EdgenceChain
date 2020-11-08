@@ -52,3 +52,16 @@ pip install -r requirements.txt
 若要只运行服务端监听进程，执行 `python listening.py`.
 
 如果让服务端只监听来自 localhost 的请求，将 `params/Params.py` 中的 `RECEIVE_LOCALHOST_MSG` 设置为 `True`。
+
+
+1.docker外的启动
+
+在第三步节点配置中第3部分位于 `params/Params.py` 的PUBLIC_IP使用主机网卡docker0对应的ip地址，然后在该命令行下运行main.py程序
+
+2.docker内部的启动
+   
+   docker build -t Edgence:docker .
+   
+   docker run Edgence:docker
+
+    
