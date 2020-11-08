@@ -57,9 +57,11 @@ pip install -r requirements.txt
 
 1.docker外的启动
 
-在第三步节点配置中第3部分位于 `params/Params.py` 的PUBLIC_IP使用主机网卡docker0对应的ip地址，然后在该命令行下运行main.py程序
+在第三步节点配置中第3部分位于 `params/Params.py` 的 `PUBLIC_IP` 使用主机网卡docker0对应的ip地址，在该命令行下运行main.py程序
 
 2.docker内部的启动
+   
+   新开一个命令行，切换到 `EdgenceChain` 目录下
    
    docker build -t Edgence:docker .
    
