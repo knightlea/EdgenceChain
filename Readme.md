@@ -63,8 +63,8 @@ pip install -r requirements.txt
    
    新开一个命令行，切换到 `EdgenceChain` 目录下
    
-   docker build -t Edgence:docker .
+   docker build -t edgence:docker .
    
-   docker run Edgence:docker
+   docker run edgence:docker
 
     
